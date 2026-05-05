@@ -1,0 +1,163 @@
+{
+  "name": "Property",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "\u05db\u05d5\u05ea\u05e8\u05ea \u05d4\u05e0\u05db\u05e1"
+    },
+    "description": {
+      "type": "string",
+      "description": "\u05ea\u05d9\u05d0\u05d5\u05e8 \u05de\u05e4\u05d5\u05e8\u05d8 \u05e9\u05dc \u05d4\u05e0\u05db\u05e1"
+    },
+    "property_type": {
+      "type": "string",
+      "enum": [
+        "apartment",
+        "house",
+        "penthouse",
+        "garden_apartment",
+        "duplex",
+        "studio",
+        "land",
+        "commercial"
+      ],
+      "description": "\u05e1\u05d5\u05d2 \u05d4\u05e0\u05db\u05e1"
+    },
+    "listing_type": {
+      "type": "string",
+      "enum": [
+        "sale",
+        "rent"
+      ],
+      "description": "\u05e1\u05d5\u05d2 \u05e2\u05e1\u05e7\u05d4 - \u05de\u05db\u05d9\u05e8\u05d4 \u05d0\u05d5 \u05d4\u05e9\u05db\u05e8\u05d4"
+    },
+    "city": {
+      "type": "string",
+      "description": "\u05e2\u05d9\u05e8"
+    },
+    "neighborhood": {
+      "type": "string",
+      "description": "\u05e9\u05db\u05d5\u05e0\u05d4"
+    },
+    "address": {
+      "type": "string",
+      "description": "\u05db\u05ea\u05d5\u05d1\u05ea \u05de\u05dc\u05d0\u05d4"
+    },
+    "price": {
+      "type": "number",
+      "description": "\u05de\u05d7\u05d9\u05e8"
+    },
+    "rooms": {
+      "type": "number",
+      "description": "\u05de\u05e1\u05e4\u05e8 \u05d7\u05d3\u05e8\u05d9\u05dd"
+    },
+    "floor": {
+      "type": "number",
+      "description": "\u05e7\u05d5\u05de\u05d4"
+    },
+    "total_floors": {
+      "type": "number",
+      "description": "\u05e1\u05d4\"\u05db \u05e7\u05d5\u05de\u05d5\u05ea \u05d1\u05d1\u05e0\u05d9\u05d9\u05df"
+    },
+    "size_sqm": {
+      "type": "number",
+      "description": "\u05e9\u05d8\u05d7 \u05d1\u05de\"\u05e8"
+    },
+    "balconies": {
+      "type": "number",
+      "description": "\u05de\u05e1\u05e4\u05e8 \u05de\u05e8\u05e4\u05e1\u05d5\u05ea"
+    },
+    "parking": {
+      "type": "boolean",
+      "description": "\u05d7\u05e0\u05d9\u05d4"
+    },
+    "elevator": {
+      "type": "boolean",
+      "description": "\u05de\u05e2\u05dc\u05d9\u05ea"
+    },
+    "air_conditioning": {
+      "type": "boolean",
+      "description": "\u05de\u05d9\u05d6\u05d5\u05d2 \u05d0\u05d5\u05d5\u05d9\u05e8"
+    },
+    "furnished": {
+      "type": "boolean",
+      "description": "\u05de\u05e8\u05d5\u05d4\u05d8"
+    },
+    "accessible": {
+      "type": "boolean",
+      "description": "\u05e0\u05d2\u05d9\u05e9 \u05dc\u05e0\u05db\u05d9\u05dd"
+    },
+    "storage": {
+      "type": "boolean",
+      "description": "\u05de\u05d7\u05e1\u05df"
+    },
+    "mamad": {
+      "type": "boolean",
+      "description": "\u05de\u05de\"\u05d3"
+    },
+    "renovated": {
+      "type": "boolean",
+      "description": "\u05de\u05e9\u05d5\u05e4\u05e5"
+    },
+    "images": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "\u05ea\u05de\u05d5\u05e0\u05d5\u05ea \u05d4\u05e0\u05db\u05e1"
+    },
+    "contact_name": {
+      "type": "string",
+      "description": "\u05e9\u05dd \u05d0\u05d9\u05e9 \u05e7\u05e9\u05e8"
+    },
+    "contact_phone": {
+      "type": "string",
+      "description": "\u05d8\u05dc\u05e4\u05d5\u05df \u05dc\u05d9\u05e6\u05d9\u05e8\u05ea \u05e7\u05e9\u05e8"
+    },
+    "contact_email": {
+      "type": "string",
+      "description": "\u05d0\u05d9\u05de\u05d9\u05d9\u05dc \u05dc\u05d9\u05e6\u05d9\u05e8\u05ea \u05e7\u05e9\u05e8"
+    },
+    "entry_date": {
+      "type": "string",
+      "format": "date",
+      "description": "\u05ea\u05d0\u05e8\u05d9\u05da \u05db\u05e0\u05d9\u05e1\u05d4"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "sold",
+        "rented",
+        "inactive",
+        "pending_approval"
+      ],
+      "default": "pending_approval",
+      "description": "\u05e1\u05d8\u05d8\u05d5\u05e1 \u05d4\u05e0\u05db\u05e1"
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false,
+      "description": "\u05e0\u05db\u05e1 \u05de\u05d5\u05de\u05dc\u05e5/\u05de\u05d5\u05d3\u05d2\u05e9"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "residential",
+        "vacation"
+      ],
+      "default": "residential",
+      "description": "\u05e7\u05d8\u05d2\u05d5\u05e8\u05d9\u05d4 - \u05de\u05d2\u05d5\u05e8\u05d9\u05dd \u05d0\u05d5 \u05e0\u05d5\u05e4\u05e9"
+    }
+  },
+  "required": [
+    "title",
+    "property_type",
+    "listing_type",
+    "city",
+    "price",
+    "rooms",
+    "contact_phone"
+  ]
+}
